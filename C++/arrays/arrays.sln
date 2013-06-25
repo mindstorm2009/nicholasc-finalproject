@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arrays", "arrays\arrays.vcxproj", "{C3E79EE8-E656-4854-A6C7-50A4A88C76EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3E79EE8-E656-4854-A6C7-50A4A88C76EB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C3E79EE8-E656-4854-A6C7-50A4A88C76EB}.Debug|Win32.Build.0 = Debug|Win32
+		{C3E79EE8-E656-4854-A6C7-50A4A88C76EB}.Release|Win32.ActiveCfg = Release|Win32
+		{C3E79EE8-E656-4854-A6C7-50A4A88C76EB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

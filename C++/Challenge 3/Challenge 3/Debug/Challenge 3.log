@@ -1,0 +1,16 @@
+﻿Build started 6/25/2013 4:32:41 PM.
+     1>Project "C:\Users\Student\Desktop\Curl\C++\Challenge 3\Challenge 3\Challenge 3.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Challenge 3.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Challenge.cpp
+         Challenge.cpp
+     1>c:\users\student\desktop\curl\c++\challenge 3\challenge 3\challenge.cpp(11): error C2059: syntax error : ')'
+     1>c:\users\student\desktop\curl\c++\challenge 3\challenge 3\challenge.cpp(12): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\student\desktop\curl\c++\challenge 3\challenge 3\challenge.cpp(17): error C2059: syntax error : ')'
+     1>c:\users\student\desktop\curl\c++\challenge 3\challenge 3\challenge.cpp(18): error C2143: syntax error : missing ';' before '{'
+     1>Done Building Project "C:\Users\Student\Desktop\Curl\C++\Challenge 3\Challenge 3\Challenge 3.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.29
