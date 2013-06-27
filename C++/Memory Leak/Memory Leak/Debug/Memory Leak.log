@@ -1,0 +1,27 @@
+﻿Build started 6/27/2013 10:31:36 AM.
+     1>Project "C:\Users\Student\Desktop\Curl\C++\Memory Leak\Memory Leak\Memory Leak.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Memory Leak.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "Memory Leak.cpp"
+         Memory Leak.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Memory Leak.exe.embed.manifest.res" "Debug\Memory Leak_manifest.rc" 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Student\Desktop\Curl\C++\Memory Leak\Debug\Memory Leak.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Memory Leak.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Student\Desktop\Curl\C++\Memory Leak\Debug\Memory Leak.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Student\Desktop\Curl\C++\Memory Leak\Debug\Memory Leak.lib" /MACHINE:X86 "Debug\Memory Leak.exe.embed.manifest.res"
+         "Debug\Memory Leak.obj"
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Memory Leak.exe.embed.manifest" /manifest "Debug\Memory Leak.exe.intermediate.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Memory Leak.exe.embed.manifest.res" "Debug\Memory Leak_manifest.rc" 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Student\Desktop\Curl\C++\Memory Leak\Debug\Memory Leak.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Memory Leak.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Student\Desktop\Curl\C++\Memory Leak\Debug\Memory Leak.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Student\Desktop\Curl\C++\Memory Leak\Debug\Memory Leak.lib" /MACHINE:X86 "Debug\Memory Leak.exe.embed.manifest.res"
+         "Debug\Memory Leak.obj"
+         Memory Leak.vcxproj -> C:\Users\Student\Desktop\Curl\C++\Memory Leak\Debug\Memory Leak.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Memory Leak.unsuccessfulbuild".
+         Touching "Debug\Memory Leak.lastbuildstate".
+     1>Done Building Project "C:\Users\Student\Desktop\Curl\C++\Memory Leak\Memory Leak\Memory Leak.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.01
