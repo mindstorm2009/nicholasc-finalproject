@@ -9,12 +9,13 @@ public class ArrayLists {
 		Scanner input = new Scanner(System.in);
 		ArrayList <String> groceryList = new ArrayList<String>();
 		
-		while(true)
+		while(groceryList.size() < 20)
 		{
 			String entry = input.nextLine();
 			groceryList.add(entry);
 			System.out.println(groceryList);
 		}
+		groceryList = null;
 		
 	}
 

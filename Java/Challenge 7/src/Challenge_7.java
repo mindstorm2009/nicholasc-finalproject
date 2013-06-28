@@ -6,18 +6,20 @@ public class Challenge_7 {
 		ArrayList <Integer> list1 = new ArrayList<Integer>();
 		ArrayList <Integer> list2 = new ArrayList<Integer>();
 		
-		while(list1.size() <= 10)
+		while(list1.size() <= 5)
 		{
 			Random rand = new Random();
 			int x =rand.nextInt();
 			list1.add(x);
+			System.out.println(list1);
 		}
 		
-		while(list2.size() <= 10)
+		while(list2.size() <= 5)
 		{
 			Random rand = new Random();
 			int y =rand.nextInt();
 			list2.add(y);
+			System.out.println(list2);
 			
 		}
 		int min1 = 0;

@@ -21,7 +21,7 @@ public class A{
 				arr2[i] = arr[i];
 			}
 			arr = arr2;
-			System.out.println(arr[50]);
+			System.out.println(arr);
 		}
 	}
 
