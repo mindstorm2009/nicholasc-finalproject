@@ -1,0 +1,11 @@
+
+public class A{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			B someName = new B();
+			int x = new int(System.in);
+			int hits = someName.getHitCount();
+			System.out.println(hits);
+	}
+
+}

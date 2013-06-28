@@ -1,0 +1,29 @@
+import java.util.*;
+
+
+public class Challenge_7 {
+	public static void main(String[] args) {
+		ArrayList <Integer> list1 = new ArrayList<Integer>();
+		ArrayList <Integer> list2 = new ArrayList<Integer>();
+		
+		while(list1.size() <= 10)
+		{
+			Random rand = new Random();
+			int x =rand.nextInt();
+			list1.add(x);
+			System.out.println(list1);
+		}
+		while(list2.size() <= 10)
+		{
+			Random rand = new Random();
+			int y =rand.nextInt();
+			list2.add(y);
+			System.out.println(list2);
+		}
+		
+		
+		
+
+	}
+
+}
