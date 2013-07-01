@@ -9,9 +9,8 @@ Dog::Dog()
 	weight = 100;
 	happiness = 100;
 	hunger = 100;
-	cout << name << " has been born." <<endl;
 }
-Dog::Dog(string newName, double newAge, int newEnergyLevel, double newWeight, int newHappiness, double newHunger)
+Dog::Dog(string newName, double newAge, double newEnergyLevel, double newWeight, int newHappiness, double newHunger)
 {
 	name = newName;
 	age = newAge;
@@ -56,6 +55,30 @@ void Dog::LieDown()
 	happiness -= 10;
 	hunger -= 1;
 }
+double Dog::getWeight()
+{
+	return weight;
+}
+int Dog::getHappiness()
+{
+	return happiness;
+}
+double Dog::getAge()
+{
+	return age;
+}
+double Dog::getEnergy()
+{
+	return energyLevel;
+}
+double Dog::getHunger()
+{
+	return hunger;
+}
+string Dog::getName()
+{
+	return name;
+}
 void Dog::setHappiness(int A)
 {
 	if(A < 101)
@@ -67,7 +90,7 @@ void Dog::setHappiness(int A)
 		happiness = 100;
 	}
 }
-void Dog::setEnergy(int B)
+void Dog::setEnergy(double B)
 {
 	if(B < 101)
 	{
@@ -78,16 +101,28 @@ void Dog::setEnergy(int B)
 		energyLevel = 100;
 	}
 }
-void Dog::setHunger(int C)
+void Dog::setHunger(double C)
 {
 	if(C < 101)
 	{
-		energyLevel = C;
+		hunger = C;
 	}
 	else
 	{
 		hunger = 100;
 	}
+}
+void Dog::setAge(double E)
+{
+	age = E;
+}
+void Dog::setName(string D)
+{
+	name = D;
+}
+void Dog::setWeight(double F)
+{
+	weight = F;
 }
 Dog::~Dog()
 {

@@ -4,15 +4,15 @@ using namespace std;
 
 class Dog
 {
-	public:
+private:
 		//Initialize Variables
 		string name;
-		int energyLevel, happiness;
-		double weight, age, hunger;
-
+		int happiness;
+		double weight, age, hunger, energyLevel;
+	public:
 		//Constructor and Destructor
 		Dog();
-		Dog(string newName, double newAge, int newEnergyLevel, double newWeight, int newHappieness, double newHunger);
+		Dog(string newName, double newAge, double newEnergyLevel, double newWeight, int newHappieness, double newHunger);
 		~Dog();
 
 		void Bark();
@@ -21,8 +21,17 @@ class Dog
 		void Sit();
 		void LieDown();
 
+		int getHappiness();
+		double getWeight();
+		double getAge();
+		double getHunger();
+		double getEnergy();
+		string getName();
 		void setHappiness(int A);
-		void setEnergy(int B);
-		void setHunger(int C);
+		void setEnergy(double B);
+		void setHunger(double C);
+		void setName(string D);
+		void setAge(double E);
+		void setWeight(double F);
 };
 
