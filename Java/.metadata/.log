@@ -290,3 +290,43 @@ Caused by: org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
 	... 24 more
+!SESSION 2013-07-02 15:41:49.840 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_13
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-07-02 15:41:54.128
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2013-07-02 16:21:30.055 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_13
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jdt.launching 4 4 2013-07-02 20:31:46.188
+!MESSAGE C:\Users\Student\Desktop\Curl\Java\.metadata\.plugins\org.eclipse.jdt.launching\.install.xml (The requested operation cannot be performed on a file with a user-mapped section open)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Student\Desktop\Curl\Java\.metadata\.plugins\org.eclipse.jdt.launching\.install.xml (The requested operation cannot be performed on a file with a user-mapped section open)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin.writeInstallInfo(LaunchingPlugin.java:1079)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin.access$0(LaunchingPlugin.java:1051)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$1.saving(LaunchingPlugin.java:544)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:383)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:192)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:195)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1130)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.Project.close(Project.java:203)
+	at org.eclipse.ui.actions.CloseResourceAction.invokeOperation(CloseResourceAction.java:129)
+	at org.eclipse.ui.actions.WorkspaceAction.execute(WorkspaceAction.java:164)
+	at org.eclipse.ui.actions.WorkspaceAction$2.runInWorkspace(WorkspaceAction.java:485)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

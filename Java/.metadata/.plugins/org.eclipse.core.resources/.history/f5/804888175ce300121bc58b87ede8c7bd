@@ -1,0 +1,33 @@
+
+public class Dog 
+{
+
+		//Initialize Variables
+		private String name;
+		private int happiness;
+		private double weight, age, hunger, energyLevel;
+	
+		//Constructor and Destructor
+		Dog();
+		Dog(string newName, double newAge, double newEnergyLevel, double newWeight, int newHappieness, double newHunger);
+		~Dog();
+
+		void Bark();
+		void Eat();
+		void Sleep();
+		void Sit();
+		void LieDown();
+
+		int getHappiness();
+		double getWeight();
+		double getAge();
+		double getHunger();
+		double getEnergy();
+		string getName();
+		void setHappiness(int A);
+		void setEnergy(double B);
+		void setHunger(double C);
+		void setName(string D);
+		void setAge(double E);
+		void setWeight(double F);
+}

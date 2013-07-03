@@ -1,0 +1,204 @@
+import java.util.Scanner;
+
+public class FinalProjectDragon
+{
+
+	public static void examineDog(Dog pup)
+	{
+		System.out.println(pup.getName());
+		System.out.println(pup.getAge() + " years old");
+		System.out.println(pup.getEnergyLevel() + " EnergyLevel");
+		System.out.println(pup.getHappiness() + " happiness");
+		System.out.println(pup.getHunger() + " hunger");
+		System.out.println(pup.getWeight() + " lbs." + "\n");
+	}
+
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+
+		boolean isPlaying = true;
+		System.out.println(Dog.pupImage());
+		System.out.println("|=====================================================|");
+		System.out.println("|          Welcome to Tamagachi: PC Version	      |");
+		System.out.println("|                     Credits:			      |");
+		System.out.println("|              Creator: Nicholas Curl		      |");
+		System.out.println("|Code Help: My ID Programing Academy Instructor Dragon|");
+		System.out.println("|=====================================================| " + "\n");
+		System.out.print("Do want to play or exit? (y/n): ");
+		String askplay = input.nextLine();
+
+		isPlaying = (askplay.equals("y"));
+		if (!isPlaying)
+		{
+			input.close();
+			return;
+		}
+
+		System.out.println("You recieve a puppy.  Please name the puppy");
+		String pupname = input.nextLine();
+		System.out.print("\n");
+
+		Dog pup = new Dog();
+		pup.setAge(.083);
+		pup.ageTimer.start();
+		pup.setEnergyLevel(10);
+		pup.setHappiness(100);
+		pup.setWeight(10);
+		pup.setHunger(100);
+		pup.setName(pupname);
+
+		do
+		{
+
+			if (pup.getEnergyLevel() < 15)
+			{
+				System.out.println("Bark, Bark, Bark");
+				System.out.println(pup.getName() + " is tired please put " + pup.getName() + " in bed" + "\n");
+			}
+
+			if (pup.getHunger() < 15)
+			{
+				System.out.println("Bark, Bark, Bark");
+				System.out.println(pup.getName() + " is hungry please feed " + pup.getName() + "\n");
+			}
+
+			if (pup.getHappiness() < 15)
+			{
+				System.out.println("Bark, Bark, Bark");
+				System.out.println(pup.getName() + " is lonely please play with " + pup.getName() + "\n");
+			}
+
+			System.out.println("1. Check on " + pup.getName());
+			System.out.println("2. Interact with " + pup.getName());
+			System.out.println("3. Quit");
+			System.out.print("Please make a selection (1, 2, or 3): ");
+			Integer selection = input.nextInt();
+			System.out.print("\n");
+
+			switch (selection)
+			{
+			case 1:
+				examineDog(pup);
+				break;
+			case 2:
+				System.out.println("1. Play with " + pup.getName());
+				System.out.println("2. Make " + pup.getName() + " sleep");
+				System.out.println("3. Feed " + pup.getName());
+				System.out.println("4. Command " + pup.getName() + " to sit");
+				System.out.println("5. Command " + pup.getName() + " to lie down");
+				System.out.println("6. Quit");
+				System.out.print("Please make a selection (1, 2, 3, 4, 5, or 6): ");
+				Integer interaction = input.nextInt();
+				System.out.print("\n");
+
+				switch (interaction)
+				{
+				case 1:
+					System.out.println("1. Use a fisbee");
+					System.out.println("2. Use a ball");
+					System.out.println("3. Play tug of war with " + pup.getName());
+					System.out.println("4. Throw a bone");
+					System.out.println("5. Belly rub");
+					System.out.print("Please make a selection (1, 2, 3, 4, or 5): ");
+					Integer play = input.nextInt();
+					System.out.print("\n");
+
+					switch (play)
+					{
+					case 1:
+						System.out.println("You throw a frisbee so " + pup.getName() + " can fetch" + "\n");
+						System.out.println(pup.getName() + " fetches the frisbee" + "\n");
+						pup.setEnergyLevel(pup.getEnergyLevel() - 0.5);
+						pup.setHunger(pup.getHunger() - 0.5);
+						pup.setHappiness(pup.getHappiness() + 2.5);
+						pup.setWeight(pup.getWeight() - 0.002);
+						break;
+					case 2:
+						System.out.println("You throw a ball so " + pup.getName() + " can fetch" + "\n");
+						System.out.println(pup.getName() + " fetches the ball" + "\n");
+						pup.setEnergyLevel(pup.getEnergyLevel() - 0.5);
+						pup.setHunger(pup.getHunger() - 0.5);
+						pup.setHappiness(pup.getHappiness() + 2.5);
+						pup.setWeight(pup.getWeight() - 0.002);
+						break;
+					case 3:
+						System.out.println("You pull on one side of the rope and " + pup.getName() + " is pulling on the other" + "\n");
+						System.out.println(pup.getName() + " wins the tug of war" + "\n");
+						pup.setEnergyLevel(pup.getEnergyLevel() - 1.5);
+						pup.setHunger(pup.getHunger() - 1);
+						pup.setHappiness(pup.getHappiness() + 3.5);
+						pup.setWeight(pup.getWeight() - 0.002);
+						break;
+					case 4:
+						System.out.println("You throw a bone so " + pup.getName() + " can fetch" + "\n");
+						System.out.println(pup.getName() + " fetches the bone" + "\n");
+						pup.setEnergyLevel(pup.getEnergyLevel() - 0.5);
+						pup.setHunger(pup.getHunger() - 0.5);
+						pup.setHappiness(pup.getHappiness() + 2.5);
+						pup.setWeight(pup.getWeight() - 0.002);
+						break;
+					case 5:
+						System.out.println("You give " + pup.getName() + " a good belly rub" + "\n");
+						pup.setHunger(pup.getHunger() - 0.5);
+						pup.setHappiness(pup.getHappiness() + 5);
+						pup.setWeight(pup.getWeight() - 0.002);
+						break;
+					}
+					break;
+				case 2:
+					pup.Sleep();
+					pup.setEnergyLevel(pup.getEnergyLevel() + 100);
+					pup.setHunger(pup.getHunger() - 0.5);
+					pup.setWeight(pup.getWeight() - .002);
+					pup.setHappiness(pup.getHappiness() - 1);
+					break;
+				case 3:
+					System.out.println(pup.getName() + " is eating" + "\n");
+					System.out.println(pup.getName() + " finishes eating" + "\n");
+					pup.setEnergyLevel(pup.getEnergyLevel() + 1);
+					pup.setHunger(pup.getHunger() + 100);
+					pup.setHappiness(pup.getHappiness() + 3);
+					pup.setWeight(pup.getWeight() + 1);
+					break;
+				case 4:
+					System.out.println(pup.getName() + " is sitting" + "\n");
+					System.out.println("1. Pet");
+					System.out.println("2. Quit");
+					System.out.print("Please make a selection (1 or 2): ");
+					Integer sit = input.nextInt();
+					System.out.print("\n");
+
+					switch (sit)
+					{
+					case 1:
+						System.out.println("You pet " + pup.getName() + "\n");
+						pup.setHunger(pup.getHunger() - 0.5);
+						pup.setHappiness(pup.getHappiness() - 3);
+						pup.setWeight(pup.getWeight() + 0.002);
+						break;
+					case 2:
+						break;
+					}
+					break;
+				case 5:
+					System.out.println(pup.getName() + " is lying down" + "\n");
+					pup.setHunger(pup.getHunger() - 0.5);
+					pup.setHappiness(pup.getHappiness() - 3);
+					pup.setWeight(pup.getWeight() + 0.005);
+					break;
+				case 6:
+					break;
+				}
+				break;
+			case 3:
+				isPlaying = false;
+			}
+		}
+		while (isPlaying);
+		
+		input.close();
+
+	}
+
+}

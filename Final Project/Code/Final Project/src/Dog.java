@@ -1,0 +1,237 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.Timer;
+
+public class Dog
+{
+
+	
+	// time ages dog
+	Timer ageTimer;
+
+	// Initialize Variables
+	private String name;
+	private double weight, age, hunger, energyLevel, happiness;
+
+	// Constructor and Destructor
+	Dog()
+	{
+		name = "Dragon";
+		age = 6;
+		energyLevel = 20;
+		weight = 100;
+		happiness = 100;
+		hunger = 100;
+		setupAgeTimer();
+	}
+
+	Dog(String newName, double newAge, double newEnergyLevel, double newWeight, double newHappiness, double newHunger)
+	{
+		name = newName;
+		age = newAge;
+		energyLevel = newEnergyLevel;
+		weight = newWeight;
+		happiness = newHappiness;
+		System.out.println("A new dog named " + name + " has been born");
+		setupAgeTimer();
+	}
+
+	private void setupAgeTimer()
+	{
+		ageTimer = new Timer(15000, new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				pupdate();
+			}
+		});
+	}
+
+	private void pupdate()
+	{
+		age += 0.083;
+		hunger -= 0.05;
+		energyLevel -= 0.009;
+		happiness -= 0.003;
+		weight += 0.005;
+	}
+
+	void Bark()
+	{
+		System.out.println(name + " is barking!");
+		happiness += 5;
+		hunger -= 0.5;
+	}
+	
+	public void fetchBone()
+	{
+		System.out.println("You throw a bone so " + name + " can fetch" + "\n");
+		wait(2000);
+		System.out.println(name + " fetches the bone" + "\n");
+	}
+	
+	public void fetchFrisbee()
+	{
+		System.out.println("You throw a frisbee so " + name + " can fetch" + "\n");
+		wait(2000);
+		System.out.println(name + " fetches the frisbee" + "\n");
+	}
+	
+	public void fetchBall()
+	{
+		System.out.println("You throw a ball so " + name + " can fetch" + "\n");
+		wait(2000);
+		System.out.println(name + " fetches the ball" + "\n");
+	}
+	
+	public void TugOfWar()
+	{
+		System.out.println("You pull on one side of the rope and " + name + " is pulling on the other" + "\n");
+		wait(2000);
+		System.out.println(name + " wins the tug of war" + "\n");
+	}
+
+	public void Eat()
+	{
+		System.out.println(name + " is eating." + "\n");
+		wait(2000);
+		System.out.println(name + " is finished eating." + "\n");
+	}
+
+	public void Sleep()
+	{
+		System.out.println(name + " is sleeping." + "\n");
+		wait(2000);
+		System.out.println(name + " is awake." + "\n");
+	}
+	
+	private void wait(int milliseconds)
+	{
+		try
+		{
+			Thread.sleep(milliseconds);
+		}
+		catch (InterruptedException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	void Sit()
+	{
+		System.out.println(name + " is sitting");
+		energyLevel += 5;
+		happiness += 10;
+		hunger -= 0.5;
+	}
+
+	void LieDown()
+	{
+		System.out.println(name + " is lying down");
+		energyLevel -= 5;
+		weight += 2;
+		happiness -= 10;
+		hunger -= 1;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
+	public void setName(String D)
+	{
+
+		name = D;
+	}
+
+	public double getHappiness()
+	{
+		return happiness;
+	}
+
+	public void setHappiness(double A)
+	{
+
+		if (A < 101)
+		{
+			happiness = A;
+		}
+		else
+		{
+			happiness = 100;
+		}
+	}
+
+	public double getWeight()
+	{
+		return weight;
+	}
+
+	public void setWeight(double F)
+	{
+
+		weight = F;
+	}
+
+	public double getAge()
+	{
+		return age;
+	}
+
+	public void setAge(double E)
+	{
+
+		age = E;
+	}
+
+	public double getHunger()
+	{
+		return hunger;
+	}
+
+	public void setHunger(double C)
+	{
+		if (C < 101)
+		{
+			hunger = C;
+		}
+		else
+		{
+			hunger = 100;
+		}
+	}
+
+	public double getEnergyLevel()
+	{
+		return energyLevel;
+	}
+
+	public void setEnergyLevel(double B)
+	{
+		if (B < 101)
+		{
+			energyLevel = B;
+		}
+		else
+		{
+			energyLevel = 100;
+		}
+	}
+	public static String pupImage()
+	{
+		String pup = " ,               -----,    " + "\n"
+				+ "((              /( ) ' `-o" + "\n"
+				+ "\\\\_,----------/      .__/ " + "\n"
+				+ "  |                  /    " + "\n"
+				+ "  (        __       ,'    " + "\n"
+				+ "   \\      )   '___\\ \\\\    " + "\n"
+				+ "    ) , '(         ` ))   " + "\n"
+				+ "   < ( `•\\_       / //    " + "\n"
+				+ "    `•\\_ `''      '''     " + "\n"
+				+ "      `''                  " + "\n";
+		return pup;
+	}
+}
